@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Love';
+    src: url(fontes/LoversQuarrel-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url(fontes/Pacifico-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Dancing';
+    src: url(fontes/DancingScript-VariableFont_wght.ttf);
+}
+
+
+/* Heart beat animation */
+@keyframes beat {
+    to {
+        transform: scale(1.4);
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(0, 0, 0, 800);
+    color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+header>h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Love';
+    font-size: 10vw;
+    font-weight: normal;
+    text-shadow: 0px 0px 5px red;
+
+}
+
+header>p {
+    padding: 0px;
+    font-family: 'Dancing';
+    font-size: 2.8vw;
+    text-shadow: 0px 0px 10px gray;
+}
+
+p>a {
+    color: inherit;
+}
+
+footer>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html,body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+section {
+    font-family: 'Pacifico';
+    font-size: 3.5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 1.5em;
+    padding-left: 20px;
+}
+
+section>p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 3px 3px 8px 0px rgba(0, 0, 0, 0.400);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.imagem>p {
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.700);
+    text-shadow: 3px 3px 0px black;
+    border-radius: 30px;
+}
+
+section#imagem01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: center left;
+}
+
+section#imagem02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+}
+
+section#imagem03 {
+    background-image: url(imagens/background003.jpg);
+    background-position: center center;
+}
+
+img#flecha01 {
+    max-width: 120px;
+    margin: auto;
+    padding: 15px 0px 25px 0px;
+
+}
+
+div.assinatura{
+    background-color: white;
+    color: black;
+    padding: 0px 70px 10px 0px;
+    font-family: 'Dancing';
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: right;
+}
+
+section.rodape{
+    background-image: url(imagens/background004.png);
+    background-position: center center;
+    background-size: contain;
+    height: 100px;
+}
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    display: block;
+    text-align: center;
+}
+
+/*
+Opçã para fazer Animação Coração Batendo
+img.coracao {
+    animation-name: beat;
+    animation-iteration-count: infinite;
+    margin: 0 5px;
+    animation-duration: .60s;
+}
+
+*/
+
+/*Animação Coração Batendo*/
+img.animate__heartBeat {
+    animation-iteration-count: infinite;
+    margin: 0 5px;
+}
